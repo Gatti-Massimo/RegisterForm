@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="App.js"></script>
+</head>
+
+<body>
+    <form name="Form" class="formBox" onsubmit="return Submit()">
+
+        <h1>REGISTER</h1>
+
+        <div class="userBox">
+            <input type="text" id="name" required>
+            <label for="name">Username</label>
+        </div>
+
+        <div class="userBox">
+            <input type="password" id="password" minlength="8" required>
+            <label for="password">Password</label>
+        </div>
+
+        <div class="userBox">
+            <input type="password" id="confirmPassword" minlength="8" required>
+            <label for="confirmPassword">Confirm password</label>
+        </div>
+
+        <div class="userBox">
+            <input type="email" id="email" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div class="userBox">                                   
+            <input type="tel" id="telephone" pattern="[0-9]{10}" required>
+            <label for="telephone">Telephone</label>
+        </div>
+
+        <!-- Output box -->
+        <p id="outBox"></p>
+
+        <div id="btnContainer">
+            <button type="submit" id="submitBtn">SUBMIT</button>
+            <button type="reset" id="resetBtn">RESET</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
